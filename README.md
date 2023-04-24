@@ -22,7 +22,9 @@ Please follow the [PyTorch Get Started](https://pytorch.org/get-started/locally/
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
 ```
 
-The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta). The commit number of RLMeta we are using is dc36de7983f8c9df70b957551efb8573126debee. Please install RLMeta by the following steps.
+The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta).
+The commit number of RLMeta we are using is [dc36de7983f8c9df70b957551efb8573126debee](https://github.com/facebookresearch/rlmeta/commit/dc36de7983f8c9df70b957551efb8573126debee).
+Please install RLMeta by the following steps.
 
 ```
 git clone https://github.com/facebookresearch/rlmeta
