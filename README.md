@@ -12,7 +12,7 @@
 * MACTA is based on [AutoCAT](https://github.com/facebookresearch/AutoCAT).
 * Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
 * MACTA uses [RLMeta](https://github.com/facebookresearch/rlmeta) as the RL framework.
-* MACTA uses [SPEC 2017](https://www.spec.org/cpu2017/) to generate benign traces. Please check the license to it and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate the traces.
+* MACTA uses [SPEC 2017](https://www.spec.org/cpu2017/) to generate benign traces. Please check the license and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate benign traces.
 
 ## Installation
 
