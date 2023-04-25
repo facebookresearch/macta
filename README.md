@@ -83,6 +83,9 @@ If you want to use [SPEC 2017](https://www.spec.org/cpu2017/), please make sure 
 
 ## Training
 To train MACTA, please modify the `attacker_checkpoint` and `trace_files` config in `src/rlmeta/macta/config/macta.yaml` to the absolute path of the files. Then run the following commands.
+
+We provide a pretrained attacker_checkpoint at `checkpoints/macta_attacker_pretrain/attacker-99.pth`
+
 ```
 conda activate macta
 cd src/rlmeta/macta
