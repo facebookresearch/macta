@@ -6,3 +6,5 @@ tabulate
 scikit-learn
 pandas
 wandb
+terminaltables
+seaborn
