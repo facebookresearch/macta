@@ -16,7 +16,7 @@
 
 ## Installation
 
-Create conda environment.
+Create conda environment with python 3.7+.
 
 ```
 conda create -n macta python=3.7
