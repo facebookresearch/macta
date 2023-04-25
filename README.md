@@ -2,10 +2,16 @@
 
 > [**MACTA: A Multi-agent Reinforcement Learning Approach for Cache Timing Attacks and Detection**](https://openreview.net/forum?id=CDlHZ78-Xzi)\
 > Jiaxun Cui, Xiaomeng Yang*, Mulong Luo*, Geunbae Lee*, Peter Stone, Hsien-Hsin S. Lee, Benjamin Lee, Edward Suh, Wenjie Xiong^, Yuandong Tian^\
-> International Conference on Learning Representations (_ICLR 2023_)\
+> The Eleventh International Conference on Learning Representations (_ICLR 2023_)\
 > \*Equal Second-author Contribution, ^Equal Supervising
 
 [Paper](https://openreview.net/pdf?id=CDlHZ78-Xzi) | [Website]() | [Bibtex](#citation)
+
+## Dependencies
+
+* MACTA is based on [AutoCAT](https://github.com/facebookresearch/AutoCAT).
+* Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
+* MACTA uses [RLMeta](https://github.com/facebookresearch/rlmeta) as the RL framework.
 
 ## Installation
 
@@ -72,10 +78,16 @@ python sample_multiagent.py
 
 ## Citation
 ```bibtex
-@inproceedings{cui2023macta,
-    title = {A Multi-agent Reinforcement Learning Approach for Cache Timing Attacks and Detection},
-    author = {Jiaxun Cui, Xiaomeng Yang, Mulong Luo, Geunbae Lee, Peter Stone, Hsien-Hsin S. Lee, Benjamin Lee, Edward Suh, Wenjie Xiong, Yuandong Tian},
-    booktitle = {International Conference on Learning Representations (ICLR)},
-    year = {2023}
+@inproceedings{
+  cui2023macta,
+  title={{MACTA}: A Multi-agent Reinforcement Learning Approach for Cache Timing Attacks and Detection},
+  author={Jiaxun Cui and Xiaomeng Yang and Mulong Luo and Geunbae Lee and Peter Stone and Hsien-Hsin S. Lee and Benjamin Lee and G. Edward Suh and Wenjie Xiong and Yuandong Tian},
+  booktitle={The Eleventh International Conference on Learning Representations },
+  year={2023},
+  url={https://openreview.net/forum?id=CDlHZ78-Xzi}
 }
 ```
+
+### License
+
+This project is under the GNU General Public License (GPL) v2.0 license. See [LICENSE](LICENSE) for details.
