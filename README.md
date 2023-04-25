@@ -39,6 +39,12 @@ git submodule sync && git submodule update --init --recursive
 pip install .
 ```
 
+There are several breaking backward compatibility changes in the [OpenAI Gym](https://github.com/openai/gym) after 0.26.0. Please see the [release note](https://github.com/openai/gym/releases/tag/0.26.0) for details. We are using the old step APIs so please install OpenAI Gym 0.25.2.
+
+```
+pip install gym\[atari,accept-rom-license\]==0.25.2
+```
+
 The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta).
 
 The commit number of RLMeta we are using is [dc36de7983f8c9df70b957551efb8573126debee](https://github.com/facebookresearch/rlmeta/commit/dc36de7983f8c9df70b957551efb8573126debee).
