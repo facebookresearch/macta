@@ -10,7 +10,7 @@
 ## Dependencies
 
 * MACTA is based on [AutoCAT](https://github.com/facebookresearch/AutoCAT).
-* Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
+* The Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
 * MACTA uses [RLMeta](https://github.com/facebookresearch/rlmeta) as the RL framework.
 * MACTA uses [SPEC 2017](https://www.spec.org/cpu2017/) to generate benign traces. Please check the license and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate benign traces.
 
@@ -37,6 +37,12 @@ git clone https://github.com/facebookresearch/moolib
 cd moolib
 git submodule sync && git submodule update --init --recursive
 pip install .
+```
+
+There are several breaking backward compatibility changes in [OpenAI Gym](https://github.com/openai/gym) after 0.26.0. Please see the [release note](https://github.com/openai/gym/releases/tag/0.26.0) for details. We are using the old step APIs so please install OpenAI Gym 0.25.2.
+
+```
+pip install gym\[atari,accept-rom-license\]==0.25.2
 ```
 
 The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta).
