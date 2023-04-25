@@ -1,0 +1,10 @@
+gym==0.25.2
+hydra-core==1.3.1
+matplotlib
+numpy
+tabulate
+scikit-learn
+pandas
+wandb
+terminaltables
+seaborn

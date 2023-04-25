@@ -1,0 +1,30 @@
+num_episodes: 1000
+seed: 123 #123 1234 12345
+
+attacker_checkpoint: ""
+detector_checkpoint: ""
+
+
+deterministic_policy: true
+
+
+trace_files: [
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500-2M_500-4M.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_502-2M_502-4M.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_505-2M_505-4M.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_502_2000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_505_2000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_502_505_2000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_502_6000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_505_6000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_502_505_6000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_502_10000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_500_505_10000000.txt",
+  "/u/jxcui/Documents/spectrace_bug_fix/spectrace_502_505_10000000.txt",
+]
+trace_limit: 2000000
+legacy_trace_format: false
+
+defaults:
+  - env_config: macta_env
+  - model_config: transformer
