@@ -33,10 +33,10 @@ The enviroment needs [moolib](https://github.com/facebookresearch/moolib) as the
 We recommend building moolib from source with the following steps.
 
 ```
-(py38) $ git clone https://github.com/facebookresearch/moolib
-(py38) $ cd moolib
-(py38) $ git submodule sync && git submodule update --init --recursive
-(py38) $ pip install .
+git clone https://github.com/facebookresearch/moolib
+cd moolib
+git submodule sync && git submodule update --init --recursive
+pip install .
 ```
 
 The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta).
@@ -53,10 +53,14 @@ git submodule sync && git submodule update --init --recursive
 pip install -e .
 ```
 
-Then install the other requirements.
+Then check out MACTA and install the other requirements.
 
 ```
+git clone https://github.com/facebookresearch/macta
+cd macta
+git submodule sync && git submodule update --init --recursive
 pip install -r requirements.txt
+
 ```
 
 ## Quick Start with Pre-trained Models
