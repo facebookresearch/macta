@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 ## Quick Start with Pre-trained Models
 We provide pretrained models of all methods, checkout the `checkpoints/`.
-To run our pretrained model, simply modify the path to the checkpoints and run
+To run our pretrained model, simply modify the absolute path to the checkpoints in `src/rlemta/macta/config/sample_multiagent.yaml` and run
 ```
 cd src/rlmeta/macta
 conda activate macta
@@ -82,15 +82,15 @@ python sample_multiagent.py
 If you want to use [SPEC 2017](https://www.spec.org/cpu2017/), please make sure you have the license to use it and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate the traces. To use the traces, specify the path to the trace files in the configs. You can also test some open-source datasets as well.
 
 ## Training
-To train MACTA
+To train MACTA, please modify the `attacker_checkpoint` and `trace_files` config in `src/rlmeta/macta/config/macta.yaml` to the absolute path of the files. Then run the following commands.
 ```
-cd src/rlmeta/macta
 conda activate macta
+cd src/rlmeta/macta
 python train/train_macta.py
 ```
 
 ## Evaluation
-Please specify the agents and evaluation parameters the config in `src/rlmeta/macta/config/sample_multiagent.yml`
+Please specify the agents and evaluation parameters the config in `src/rlmeta/macta/config/sample_multiagent.yaml`
 ```
 cd src/rlmeta/macta
 conda activate macta
