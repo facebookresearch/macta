@@ -7,6 +7,11 @@
 
 [Paper](https://openreview.net/pdf?id=CDlHZ78-Xzi) | [Website]() | [Bibtex](#citation)
 
+## Dependencies
+
+* MACTA is based on [AutoCAT](https://github.com/facebookresearch/AutoCAT).
+* Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
+
 ## Installation
 
 Create conda environment.
@@ -79,3 +84,7 @@ python sample_multiagent.py
     year = {2023}
 }
 ```
+
+### License
+
+This project is under the GNU General Public License (GPL) v2.0 license. See [LICENSE](LICENSE) for details.
