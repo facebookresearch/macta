@@ -12,6 +12,7 @@
 * MACTA is based on [AutoCAT](https://github.com/facebookresearch/AutoCAT).
 * Cache Gym Environment we used is based on an [open source CacheSimulator](https://github.com/auxiliary/CacheSimulator) from [auxiliary](https://github.com/auxiliary).
 * MACTA uses [RLMeta](https://github.com/facebookresearch/rlmeta) as the RL framework.
+* MACTA uses [SPEC 2017](https://www.spec.org/cpu2017/) to generate benign traces. Please check the license and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate benign traces.
 
 ## Installation
 
@@ -26,6 +27,16 @@ Please follow the [PyTorch Get Started](https://pytorch.org/get-started/locally/
 
 ```
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
+```
+
+The enviroment needs [moolib](https://github.com/facebookresearch/moolib) as the RPC backend for distributed RL training. Please follow the moolib installation instructions.
+We recommend building moolib from source with the following steps.
+
+```
+(py38) $ git clone https://github.com/facebookresearch/moolib
+(py38) $ cd moolib
+(py38) $ git submodule sync && git submodule update --init --recursive
+(py38) $ pip install .
 ```
 
 The RL trainer is based on [RLMeta](https://github.com/facebookresearch/rlmeta).
@@ -58,7 +69,7 @@ python sample_multiagent.py
 ```
 
 ## Benign Trace Generation
-If you want to use [SPEC 2017](https://www.spec.org/cpu2017/), please make sure you have liscence to it and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate the traces. To use the traces, specify the path to the trace files in the configs. You can also test some open-source datasets as well.
+If you want to use [SPEC 2017](https://www.spec.org/cpu2017/), please make sure you have the license to use it and follow the [instructions here](https://code.vt.edu/bearhw-public/rl-mem-trace) to generate the traces. To use the traces, specify the path to the trace files in the configs. You can also test some open-source datasets as well.
 
 ## Training
 To train MACTA
